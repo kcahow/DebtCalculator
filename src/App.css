@@ -1,0 +1,133 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.card {
+  padding: 2em;
+}
+
+/* Create 2 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+button {
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #03b62d;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+.spacer{
+  margin-top:15px;
+}
+
+.grid-container-element { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 10px; 
+  /* border: 1px solid black;  */
+  width: 80%; 
+  border-radius: 20px;
+  background-color:rgb(226, 225, 225);
+} 
+.grid-child-element { 
+  margin: 10px; 
+  /* border: 1px solid red;  */
+}
+
+.radio {
+  justify-content: center;
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  font-size: 2.0em;
+  font-weight: bold;
+  width:250px;
+  color: green;
+  align-items: "left";
+}
+.titleSmall {
+  font-size: 1.25em;
+  font-weight: bold;
+  width:250px;
+  color: green;
+  align-items: "left";
+}
+.inputSmall {
+  width:100px;
+  border-width: 2px;
+  border-color: "#3498db";
+  border-radius: 10px;
+  padding:5px;
+  font-size:1.25em;
+  align-items: "left";
+}
+
+.input {
+  width:250px;
+  border-width: 2px;
+  border-color: "#3498db";
+  border-radius: 10px;
+  padding:5px;
+  font-size:1.25em;
+  align-items: "left";
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: cen"left";
+  justify-content: "left";
+  width: 100%;
+}
+
+.smallText{
+  font-size: .65em;
+}
+
+.resultsDiv{
+  padding:5px;
+  margin:5px;
+  border-radius: 10px;
+  background-color: rgb(250, 215, 162);
+}
+
+.resultsValue{
+  font-size: 1.25em;
+  color:rgb(12, 131, 12);
+  padding-top:10px;
+  font-weight: bold;
+}
