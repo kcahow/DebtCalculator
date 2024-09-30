@@ -1,0 +1,15 @@
+services:
+  sample:
+    container_name: myapp
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - 3001:3000 #changing the port from 3000 to 3001
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+# CHOKIDAR_USEPOLLING: This environment variable is needed to ensure file changes are detected correctly within the Docker container.
