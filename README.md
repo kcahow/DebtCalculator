@@ -49,18 +49,18 @@ export default tseslint.config({
 })
 ```
 
-## Docker information
-# to build the docker image
+# Docker information
+## to build the docker image
 docker build -t myapp . (-t = tag name to name the image)
 
-# after build, you can run the dockerfile
+## after build, you can run the dockerfile
 docker run -p 3001:3000 myapp
 
-# or you can use the docker compose
+## or you can use the docker compose
 docker compose up -d (detached mode)
 
-# to stop the container
+## to stop the container
 docker compose stop
 
-# Stops containers and removes containers, networks, volumes, and images created by up
+## Stops containers and removes containers, networks, volumes, and images created by up
 docker compose down
